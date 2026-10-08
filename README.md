@@ -153,3 +153,11 @@ Each major folder contains its own notes where needed. See [`data/README.md`](da
 * A local-only lab shows my own attacks, not real-world ones.
 
 ---
+
+## [?] Future Work
+
+* MITRE ATT&CK heatmap of observed techniques.
+* Alerts via email or Telegram.
+* Hash-chained logs for tamper evidence.
+
+---
