@@ -1,6 +1,8 @@
 # ST5041CMD [Course]
 > The Internet and Web Technologies.
 
+---
+
 ## [~] Web Honeypot with Attack Dashboard
 
 A fake system that looks real and valuable, but exists only to be attacked.
@@ -37,15 +39,15 @@ A `honeypot` is a decoy that no real user has a reason to visit, a every request
 ```
 Attacker / bot
       ↓  HTTP request
-Decoy web app (Flask)          → fake pages, fake login, catch-all route
+Decoy web app (Flask)         → fake pages, fake login, catch-all route
       ↓
-Logger + Classifier            → tags: sqli, xss, traversal, scanner, brute_force
+Logger + Classifier           → tags: sqli, xss, traversal, scanner, brute_force
       ↓
-Enrichment                     → GeoIP country, tool guess from User-Agent
+Enrichment                    → GeoIP country, tool guess from User-Agent
       ↓
-Database (SQLite)              → events, ips, credentials_tried, rules
+Database (SQLite)             → events, ips, credentials_tried, rules
       ↓
-Dashboard (private)            → login + MFA, charts, live feed, export
+Dashboard (private)           → login + MFA, charts, live feed, export
 ```
 
 ---
