@@ -1,6 +1,6 @@
 # ST5041CMD [Course]
 > The Internet and Web Technologies.
 
-## [~] Digital Evidence Management System
+## [~] Web Honeypot with Attack Dashboard
 
-Manage authorized investigation casees, investogators, evidence, chain-of-custody records and reports.
+A fake system that looks real and valuable, but exists only to be attacked.
