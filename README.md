@@ -121,7 +121,35 @@ Each major folder contains its own notes where needed. See [`data/README.md`](da
 
 ---
 
-## [~] Getting Started
+## [~] Security of the Project Itself
 
+* Parameterized SQL queries only.
+* Output encoding on all logged data (stops store XSS)
+* Password hashing, MFA, lockout, secure cookie flags.
+* CSRF tokens on all dashboard POST requests.
+* Rate limiting and size limits (log flooding protection).
+* Decoy runs as non-root with outbound traffic blocked.
+* Decoy and dashboard on separate networks; least-privilege database users.
+* Secrets only in environment variables.
+
+---
+
+## [~] Ethics and Legal
+
+* Attack only systems I own or have written permission to test.
+* No real malware; web-shell tests use harmless dummy files.
+* The honeypot is passive: no 'hacking back'.
+* IP addresses may be personal data (UK GDPR): minimised, retention-limited, masked in reports.
+* Relevant law: Computer Misuse Act 1990 (UK) or local equivalent.
+
+---
+
+## [?] Limitations
+
+* Only sees attackers who find and touch the decoy.
+* Signature-based rules miss obfuscated payloads.
+* Most traffic is automated noise, not targeted attacks.
+* Skilled attackers may fingerprint the fake.
+* A local-only lab shows my own attacks, not real-world ones.
 
 ---
