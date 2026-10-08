@@ -161,3 +161,14 @@ Each major folder contains its own notes where needed. See [`data/README.md`](da
 * Hash-chained logs for tamper evidence.
 
 ---
+
+## [~] How to Navigate
+
+* Start here for the project overview.
+* Open `decoy/` for the fake site, logger and classifier.
+* Open `dashboard/` for the analyst interface.
+* Open `tests/` for payload tests and metrics.
+* Open `data/README.md` for storage, privacy and GeoIP setup.
+* Oepn `docs/` for diagrams, the threat model and the report.
+
+---
