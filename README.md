@@ -172,3 +172,9 @@ Each major folder contains its own notes where needed. See [`data/README.md`](da
 * Oepn `docs/` for diagrams, the threat model and the report.
 
 ---
+
+## [~] References
+
+* OWASP Top 10 and OWASP Cheat Sheet Series
+* MITRE ATT&CK
+* Honeynet Project; Cowrie, T-Pot, OpenCanary (studied, not copied)
