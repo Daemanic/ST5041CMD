@@ -1,0 +1,55 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+id_rsa*
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime data (keep README + .gitkeep only)
+data/*
+!data/README.md
+!data/.gitkeep
+logs/*
+!logs/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+*.jsonl
+*.log
+*.mmdb
+
+# Test and tool output
+tests/results/*
+!tests/results/.gitkeep
+!tests/results/concept.md
+!tests/results/summary.md
+*.pcap
+*.pcapng
+*.burp
+sqlmap_output/
+nikto_*.html
+hydra_*.txt
+
+# Docs and media
+document/draft/
+document/demo/*.mp4
+*.zip
+*.tar.gz
