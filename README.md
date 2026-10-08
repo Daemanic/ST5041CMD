@@ -36,7 +36,7 @@ A `honeypot` is a decoy that no real user has a reason to visit, a every request
 
 ```
 Attacker / bot
-      ↓  HTTP request
+      ↓
 Decoy web app (Flask)         → fake pages, fake login, catch-all route
       ↓
 Logger + Classifier           → tags: sqli, xss, traversal, scanner, brute_force
