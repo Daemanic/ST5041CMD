@@ -10,8 +10,7 @@ A fake system that looks real and valuable, but exists only to be attacked.
 | Course | ST5041CMD - The Internet and Web Technologies |
 |---|---|
 | Lecturer | Abhishek Bimali |
-| Project Type | Final project (defensive + offensive, purple team) |
-| Purpose | Capture, classify and visualise web attacks against an isolated decoy site. |
+| Purpose | Capture, classify and visualise web attacks against an decoy site. |
 
 ---
 
