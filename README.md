@@ -53,19 +53,24 @@ Dashboard (private)           → login + MFA, charts, live feed, export
 ## [~] Repository Structure
 
 ```
-ST5041CMD-Honeypot/
-│── decoy/                  → Public fake site (isolated)
-│ │── app.py                → Flask app + catch-all route
-│ │── logger.py             → Captures each request
-│ │── classifier.py         → Attack detection rules
-│ │── enrich.py             → GeoIP + User-Agent parsing
-│ └── fake_responses/       → Fake .env, fake admin pages
+ST5041CMD/
+│── dashboard/
+│ │── static/
+│ │── templates/
 │
-│── dashboard/              → Private analyst site
-│ │── app.py                → Login, MFA, routes
-│ │── templates/            → Jinja2 pages (auto-escaped)
-│ │── static/               → Chart.js, CSS
-│ └── reports.py            → PDF / CSV export
+│── data/
+│
+│── decoy/
+│ │── response/
+│ │── static/
+│ │── templates/
+│
+│── document/
+│ │── demo/
+│ │── diagrams/
+│ │── draft/
+│ │── report/
+│ │── screenshot/
 │
 │── shared/
 │ │── db.py                 → Database helpers (parameterized queries only)
@@ -75,12 +80,6 @@ ST5041CMD-Honeypot/
 │ │── test_classifier.py
 │ │── attack_payloads.txt   → Labelled attack + benign inputs
 │ └── run_attacks.py        → Fires payloads, calculates metrics
-│
-│── data/                   → Database + GeoIP file (not committed, see data/README.md)
-│── docs/                   → Diagrams, threat model, report, screenshots
-│── docker-compose.yml
-│── requirements.txt
-└── README.md               → Project overview
 ```
 
 Each major folder contains its own notes where needed. See [`data/README.md`](data/README.md) for what is stored there.
