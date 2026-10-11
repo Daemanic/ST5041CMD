@@ -66,21 +66,25 @@ ST5041CMD/
 │ │── templates/              → Fake pages (admin login, phpMyAdmin, search, 404)
 │
 │── document/                 → Project documentation and report evidence
-│ │── demo/
-│ │── diagrams/
-│ │── draft/
-│ │── report/
-│ │── screenshot/
+│ │── demo/                   → Demo video link and notes
+│ │── diagrams/               → Architecture, data flow, ER and sequence diagrams
+│ │── draft/                  → Local drafts
+│ │── report/                 → Final report
+│ │── screenshot/             → Screenshots (masked IP addresses)
 │
-│── logs/
+│── logs/                     → Runtime log files (non-commited)
 │
-│── scripts/
+│── scripts/                  → Helper scripts: admin, backup, reset lab, test traffic
 │
-│── shared/
+│── shared/                   → Code used by both apps: config, database, security helpers
 │
-│── tests/
-│ │── results/
+│── tests/                    → Automated tests and the attack / benign payload lists
+│ │── results/                → Test output (summary files)
 │
+│── .dockerignore             → Files Docker must NOT copy into images
+│── .env.example
+│── .gitignore
+│── docker-compose.yml
 │── LICENSE
 │── pytest.ini
 │── README.md
