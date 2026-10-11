@@ -54,18 +54,18 @@ Dashboard (private)           → login + MFA, charts, live feed, export
 
 ```
 ST5041CMD/
-│── dashboard/
-│ │── static/
-│ │── templates/
+│── dashboard/                → Private analyst site: login + MFA, charts, live feed
+│ │── static/                 → CSS and Javascript
+│ │── templates/              → Jinja2 pages (auto-escaped)
 │
-│── data/
+│── data/                     → Runtime storage: database, raw logs, GeoIP file (non-commited)
 │
-│── decoy/
-│ │── response/
-│ │── static/
-│ │── templates/
+│── decoy/                    → Publi fake site that logs and classifies every request
+│ │── response/               → Fake files served to attackers (.env, config.php, robots.txt)
+│ │── static/                 → CSS for the fake pages
+│ │── templates/              → Fake pages (admin login, phpMyAdmin, search, 404)
 │
-│── document/
+│── document/                 → Project documentation and report evidence
 │ │── demo/
 │ │── diagrams/
 │ │── draft/
@@ -154,6 +154,7 @@ Each major folder contains its own notes where needed. See [`data/README.md`](da
 * Most traffic is automated noise, not targeted attacks.
 * Skilled attackers may fingerprint the fake.
 * A local-only lab shows my own attacks, not real-world ones.
+* SQLite has no per-user permissions, so decoy and dashboard share on database file.
 
 ---
 
@@ -162,6 +163,7 @@ Each major folder contains its own notes where needed. See [`data/README.md`](da
 * MITRE ATT&CK heatmap of observed techniques.
 * Alerts via email or Telegram.
 * Hash-chained logs for tamper evidence.
+* PostgresSQL with separate database roles.
 
 ---
 
