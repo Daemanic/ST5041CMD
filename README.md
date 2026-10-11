@@ -72,14 +72,14 @@ ST5041CMD/
 │ │── report/
 │ │── screenshot/
 │
+│── logs/
+│
+│── scripts/
+│
 │── shared/
-│ │── db.py                 → Database helpers (parameterized queries only)
-│ └── config.py             → Settings from environment variables
 │
 │── tests/
-│ │── test_classifier.py
-│ │── attack_payloads.txt   → Labelled attack + benign inputs
-│ └── run_attacks.py        → Fires payloads, calculates metrics
+│ │── results/
 ```
 
 Each major folder contains its own notes where needed. See [`data/README.md`](data/README.md) for what is stored there.
